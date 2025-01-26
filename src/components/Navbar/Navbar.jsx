@@ -9,9 +9,6 @@ export default function Navbar() {
         <span className="brand-text">Kbeauty</span>
       </div> */}
       <div className="navbar-menu">
-        {/* <a href="/" className="active">
-          HOME
-        </a> */}
         <a href="/">HOME</a>
         <a href="/choose-photo">CHOOSE PHOTO</a>
         <a href="/pricing">PRICING</a>
