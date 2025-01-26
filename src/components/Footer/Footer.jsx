@@ -7,15 +7,14 @@ export default function Footer() {
       <div className="footer-content">
         <div className="footer-section">
           <h4>About Us</h4>
-          <p>At KBeauty, we are trained in understanding human beauty and finding ways to help you improve yours.</p>
+          <p>At K-GlowZy, we are trained in understanding human beauty and finding ways to help you improve yours.</p>
         </div>
 
         <div className="footer-section">
           <h4>Our Promise</h4>
           <p>
-            Do you want to know what makes you ATTRACTIVE?
-            Find yourself, know what suits you and look better.
-            Generate your Face Analysis Report INSTANTLY.
+            Do you want to know what makes you ATTRACTIVE? Find yourself, know what suits you and look better.Generate your Face Analysis Report INSTANTLY.
+            <br />
             Backed by Science.
           </p>
         </div>
@@ -23,46 +22,30 @@ export default function Footer() {
         <div className="footer-section">
           <h4>Useful Links</h4>
           <ul>
-            <li>
-              <a href="#">REPORT AN ERROR</a>
+          <li>
+              <button className="link-button">REPORT AN ERROR</button>
             </li>
             <li>
-              <a href="#">ANALYSE YOUR FACE</a>
+              <button className="link-button">ANALYSE YOUR FACE</button>
             </li>
             <li>
-              <a href="#">CELEBRITY FEATURES</a>
+              <button className="link-button">CELEBRITY FEATURES</button>
             </li>
             <li>
-              <a href="#">HELP</a>
+              <button className="link-button">HELP</button>
             </li>
           </ul>
         </div>
       </div>
 
       <div className="footer-bottom">
-        <p>© 2024 - 2025 All Rights Reserved by KBeauty.com</p>
+        <p className="copyright">© 2024 - 2025 All Rights Reserved by Zensyai.com</p>
         <div className="social-links">
-          <a href="#" className="social-icon">
-            Facebook
-          </a>
-          <a href="#" className="social-icon">
-            Twitter
-          </a>
-          <a href="#" className="social-icon">
-            Instagram
-          </a>
-          <a href="#" className="social-icon">
-            Pinterest
-          </a>
-          <a href="#" className="social-icon">
-            LinkedIn
-          </a>
-          <a href="#" className="social-icon">
-            YouTube
-          </a>
-          <a href="#" className="social-icon">
-            Tumblr
-          </a>
+        <div className="social-links">
+          <button className="social-icon">Facebook</button>
+          <button className="social-icon">Twitter</button>
+          <button className="social-icon">Instagram</button>
+        </div>
         </div>
       </div>
     </footer>

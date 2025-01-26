@@ -6,11 +6,10 @@
 .footer-content {
   max-width: 1200px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20rem;
+display: flex;
+flex-direction: row;
+  gap: 10rem;
 }
-
 .footer-section h4 {
   font-size: 1rem;
   margin: 10px 0px;
@@ -20,11 +19,14 @@
   color: #ccc;
   line-height: 1.2;
   font-size: smaller;
+  width: 400px;
+  padding-bottom: 10px;
 }
 
 .footer-section ul {
   list-style: none;
   padding: 0;
+  width: 150px
 }
 
 .footer-section ul li {
@@ -48,24 +50,41 @@
   padding: 1rem 0;
   background: #222;
   text-align: center;
-  flex-direction: column; /* Corrected flex direction */
+  flex-direction: row; /* Corrected flex direction */
   justify-content: space-around;
 }
 
-.social-links {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 0.5rem; /* Adjusted gap */
-  padding: 0.5rem 0; /* Adjusted padding */
+.link-button {
+  background: none;
+  border: none;
+  color: #ccc;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: smaller;
+  transition: color 0.3s ease;
+}
+
+.link-button:hover {
+  color: white;
 }
 
 .social-icon {
+  background: none;
+  border: none;
   color: #ccc;
   text-decoration: none;
+  cursor: pointer;
   transition: color 0.3s ease;
 }
 
 .social-icon:hover {
   color: white;
+}
+.social-links {
+  display: flex;
+  gap: 1rem; /* Add space between social icons */
+}
+.footer-bottom p {
+  text-align: center; /* Center the text within the paragraph */
+  margin: 0; /* Remove default margin */
 }
