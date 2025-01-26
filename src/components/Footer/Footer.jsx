@@ -14,11 +14,8 @@ export default function Footer() {
           <h4>Our Promise</h4>
           <p>
             Do you want to know what makes you ATTRACTIVE?
-            <br />
             Find yourself, know what suits you and look better.
-            <br />
             Generate your Face Analysis Report INSTANTLY.
-            <br />
             Backed by Science.
           </p>
         </div>

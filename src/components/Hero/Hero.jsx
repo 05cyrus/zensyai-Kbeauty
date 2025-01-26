@@ -1,9 +1,27 @@
-import React from "react"
+import React, { useRef } from "react"
+import Spline from '@splinetool/react-spline';
 import "./Hero.css"
 
 export default function Hero() {
+  const fileInputRef = useRef(null);
+
+  const handleButtonClick = () => {
+    fileInputRef.current.click();
+  };
+
+  const handleFileChange = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      // Handle the file upload logic here
+      console.log("Selected file:", file);
+    }
+  };
+
   return (
     <section className="hero">
+      <div className="spline-container">
+        <Spline scene="https://prod.spline.design/eTOis9dglCatnonG/scene.splinecode" />
+      </div>
       <div className="hero-content">
         <div className="analytics-overlay">
           <div className="graph"></div>
@@ -17,18 +35,19 @@ export default function Hero() {
           </h1>
           <p>Upload a selfie or take a new photo to get your personalized beauty score.</p>
           <div className="cta-buttons">
-            <button className="btn-upload">
-              <span className="icon">↑</span>
-              Upload Image
+            <button className="btn-analyze" onClick={handleButtonClick}>
+              <span className="icon"></span>
+              Analyze
             </button>
-            <button className="btn-selfie">
-              <span className="icon">📸</span>
-              Take a Selfie
-            </button>
+            <input
+              type="file"
+              ref={fileInputRef}
+              style={{ display: "none" }}
+              onChange={handleFileChange}
+            />
           </div>
         </div>
       </div>
     </section>
   )
 }
-

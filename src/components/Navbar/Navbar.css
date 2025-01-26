@@ -16,12 +16,16 @@
   }
   
   .logo {
+    width: 40px;
     height: 40px;
+    background-image: url("../../assets/z-logo.jpeg");
+    background-size: cover;
+    background-position: center;
   }
   
   .brand-text {
-    font-size: 1.5rem;
-    color: #000;
+    font-size: 1rem;
+    color: #fafafa;
     font-weight: bold;
   }
   

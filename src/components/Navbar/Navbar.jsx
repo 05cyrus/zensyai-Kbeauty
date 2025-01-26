@@ -4,15 +4,12 @@ import "./Navbar.css"
 export default function Navbar() {
   return (
     <nav className="navbar">
-      {/* <div className="navbar-brand">
-        <img src="/logo.svg" alt="Kbeauty" className="logo" />
-        <span className="brand-text">Kbeauty</span>
-      </div> */}
+      <div className="navbar-brand">
+        <div className="logo" />
+        <span className="brand-text">GlowZy</span>
+      </div>
       <div className="navbar-menu">
-        <a href="/">HOME</a>
-        <a href="/choose-photo">CHOOSE PHOTO</a>
-        <a href="/pricing">PRICING</a>
-        <a href="/about">ABOUT</a>
+        <a href="/">Whats k-beauty?</a>
       </div>
     </nav>
   )
