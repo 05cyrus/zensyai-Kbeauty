@@ -1,0 +1,50 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .logo {
+    height: 40px;
+  }
+  
+  .brand-text {
+    font-size: 1.5rem;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-end; 
+  }
+  
+  .navbar-menu a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-menu a.active {
+    color: #4169e1;
+  }
+  
+  .navbar-menu a:hover {
+    color: #4169e1;
+  }
+  
+  
