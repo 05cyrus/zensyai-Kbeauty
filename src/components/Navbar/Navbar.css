@@ -50,5 +50,14 @@
   .navbar-menu a:hover {
     color: #033ae0;
   }
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      padding: 1rem 2rem;
+    }
   
-  
+    .navbar-menu {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
