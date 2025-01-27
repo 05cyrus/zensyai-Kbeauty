@@ -30,15 +30,12 @@ export default function Hero() {
         </div>
         <div className="hero-text">
           <h1>
-            <span>Analyze</span>
-            <span>Your</span>
-            <span>Beauty</span>
+          Your Personalized AI powered K- Beauty Aesthetician
           </h1>
           <p>Upload a selfie or take a new photo to get your personalized beauty score.</p>
           <div className="cta-buttons">
             <button className="btn-analyze" onClick={handleButtonClick}>
-              <span className="icon"></span>
-              Analyze
+              Get Your Rating
             </button>
             <input
               type="file"

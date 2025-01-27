@@ -41,18 +41,16 @@
 .hero-text {
   margin-left: 100px;
   text-align: left; /* Align text to the left */
-  margin-bottom: 1rem; /* Adjust margin to move up */
+  margin-bottom: 200px; /* Adjust margin to move up */
 }
 
 .hero-text h1 {
   font-size: 5rem;
   line-height: 1;
   margin-bottom: 1rem; /* Adjust margin to move up */
+  width: 1800px;
 }
 
-.hero-text h1 span {
-  display: block;
-}
 
 .cta-buttons {
   display: flex;
@@ -65,11 +63,34 @@
   padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 4px;
-  font-size: 1rem;
+  font-size: 2rem;
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  color: rgb(255, 0, 136);
+  background: white;
+  position: relative;
+  z-index: 2;
+  transition: box-shadow 0.3s ease;
+}
+
+.btn-analyze::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: -1;
+  filter: blur(10px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.btn-analyze:hover::before {
+  opacity: 1;
 }
 
 .btn-upload {
@@ -102,11 +123,17 @@
 
   .hero-text h1 {
     font-size: 3rem;
-    margin-bottom: 1rem; /* Adjust margin to move up */
+    margin-bottom: 10rem; /* Adjust margin to move up */
+    width: 1800px;
   }
 
   .cta-buttons {
     justify-content: flex-start; /* Align buttons to the left */
     margin-top: 1rem; /* Adjust margin to move up */
   }
+}
+.hero-text p{
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  width: 1800px;
 }
