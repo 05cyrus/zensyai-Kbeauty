@@ -19,9 +19,10 @@ export default function Hero() {
 
   return (
     <section className="hero">
-      <div className="spline-container">
-        <Spline scene="https://prod.spline.design/eTOis9dglCatnonG/scene.splinecode" />
-      </div>
+      <Spline
+        scene="https://prod.spline.design/i456MPBF5o22ysl8/scene.splinecode"
+        className="spline-background"
+      />
       <div className="hero-content">
         <div className="analytics-overlay">
           <div className="graph"></div>
