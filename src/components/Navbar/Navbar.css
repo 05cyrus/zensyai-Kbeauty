@@ -27,7 +27,7 @@
   font-size: 1.5rem;
   color: #fafafa;
   font-weight: bold;
-  animation: glow 1.5s infinite alternate;
+  animation: glow 1s infinite alternate;
 }
 
 .navbar-menu {
@@ -39,10 +39,10 @@
 .navbar-menu a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 500;
   transition: color 0.3s ease;
-  animation: glow 1.5s infinite alternate;
+  animation: glow 1s infinite alternate;
 }
 
 /* .navbar-menu a.active {
@@ -55,11 +55,13 @@
 
 @keyframes glow {
   from {
-    text-shadow: 0 0 2px #fff, 0 0 6px #ff00ff;
+    text-shadow: 0 0 3px #fff;
   }
+  /* , 0 0 6px #ff00ff */
   to {
-    text-shadow: 0 0 4px #fff, 0 0 12px #ff00ff;
+    text-shadow: 0 0 3px #fff;
   }
+  /* , 0 0 12px #ff00ff */
 }
 
 @media (max-width: 768px) {
