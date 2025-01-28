@@ -146,13 +146,15 @@
   .hero-text {
     margin-left: 100px;
     text-align: left; /* Align text to the left */
-    margin-bottom: 200px; /* Adjust margin to move up */
+    margin-bottom: 20px; /* Adjust margin to move up */
+    margin-right: 180px;
   }
   .btn-analyze {
     width: 200%; /* Adjust the width as needed */
-    font-size: 1rem;
+    font-size: .5rem;
   }
   .hero-content{
-    padding: 1rem;
+    padding: .5rem;
+    width: 100%;
   }
 }
