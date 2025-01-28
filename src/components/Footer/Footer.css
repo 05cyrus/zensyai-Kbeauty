@@ -111,3 +111,25 @@
     justify-content: center; /* Center the social links */
   }
 }
+@media (max-width: 500px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  .footer-section p {
+    width: 100%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .social-links {
+    justify-content: center; 
+  }
+  .copyright{
+    font-size: 0.8rem;
+  }
+}

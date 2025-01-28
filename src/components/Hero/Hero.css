@@ -25,21 +25,21 @@
   z-index: 2;
   padding: 4rem;
   color: white;
-  width: 50%;
+  width: 100%;
 }
 
 
 .hero-text {
-  margin-left: 100px;
+  margin-left: 6%;
   text-align: left; /* Align text to the left */
-  margin-bottom: 200px; /* Adjust margin to move up */
+  margin-bottom: 16%; /* Adjust margin to move up */
 }
 
 .hero-text h1 {
   font-size: 5rem;
   line-height: 1;
   margin-bottom: 2rem; /* Adjust margin to move up */
-  width: 200%;
+  width: 50%;
 }
 .hero-text p{
   font-size: 1.3rem;
@@ -101,60 +101,47 @@
 .mobile-btn{
   display: none;
 }
-
-/* @media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    padding: 4rem 1rem;
+@media (max-width:850px) {
+  .hero-text p{
+    display: none;
   }
-
-  .hero-content {
-    width: 100%;
-    padding: 2rem 1rem;
-  }
-
-  .hero-text {
-    margin-left: 0;
-    text-align: left;
-    margin-bottom: 1rem;
-  }
-
   .hero-text h1 {
-    font-size: 3rem;
-    margin-bottom: 10rem; 
-    width: 1800px;
+    font-size: 2rem;
   }
-
-  .cta-buttons {
-    justify-content: flex-start; 
-    margin-top: 1rem; 
+}
+@media (max-width:500px) {
+  .hero-text p{
+    display: none;
   }
-} */
+  .hero-text h1 {
+    font-size: 1.5rem;
+  }
+  .btn-analyze{
+    font-size: 1rem;
+  }
+  
+}
 @media (max-width: 768px) {
-  .hero-text h1 {
+  /* .hero-text h1 {
     font-size: 2rem;
     margin-bottom:6rem;
     width:200%;
   }
   .hero-text p{
     display: none;
-    /* margin-top: 20rem; ;
-    font-size: 0.7rem;
-    margin-bottom: 1rem;
-    width: 200%; */
   }
   .hero-text {
     margin-left: 100px;
-    text-align: left; /* Align text to the left */
-    margin-bottom: 20px; /* Adjust margin to move up */
-    margin-right: 180px;
+    text-align: left; 
+    margin-bottom: 20px; 
+    margin-right: 145px;
   }
   .btn-analyze {
-    width: 200%; /* Adjust the width as needed */
+    width: 200%; 
     font-size: .5rem;
   }
   .hero-content{
     padding: .5rem;
     width: 100%;
-  }
+  } */
 }
