@@ -45,28 +45,18 @@
   animation: glow 1s infinite alternate;
 }
 
-/* .navbar-menu a.active {
-  color: #03b4e0;
-}
-
-.navbar-menu a:hover {
-  color: #dce003;
-} */
-
 @keyframes glow {
   from {
     text-shadow: 0 0 3px #fff;
   }
-  /* , 0 0 6px #ff00ff */
   to {
     text-shadow: 0 0 3px #fff;
   }
-  /* , 0 0 12px #ff00ff */
 }
 
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
+    flex-direction: row;
     padding: 1rem 2rem;
   }
 

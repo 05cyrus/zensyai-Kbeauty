@@ -41,11 +41,9 @@ export default function Footer() {
       <div className="footer-bottom">
         <p className="copyright">© 2024 - 2025 All Rights Reserved by Zensyai.com</p>
         <div className="social-links">
-        <div className="social-links">
           <button className="social-icon">Facebook</button>
           <button className="social-icon">Twitter</button>
           <button className="social-icon">Instagram</button>
-        </div>
         </div>
       </div>
     </footer>

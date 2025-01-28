@@ -24,18 +24,14 @@ export default function Hero() {
         className="spline-background"
       />
       <div className="hero-content">
-        <div className="analytics-overlay">
-          <div className="graph"></div>
-          <div className="chart"></div>
-        </div>
         <div className="hero-text">
           <h1>
-          Your Personalized AI powered K- Beauty Aesthetician
+          Personalized AI powered K- Beauty Aesthetician
           </h1>
           <p>Upload a selfie or take a new photo to get your personalized beauty score.</p>
           <div className="cta-buttons">
             <button className="btn-analyze" onClick={handleButtonClick}>
-              Get Your Rating
+              START
             </button>
             <input
               type="file"
