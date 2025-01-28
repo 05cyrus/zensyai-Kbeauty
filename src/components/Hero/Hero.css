@@ -134,7 +134,7 @@
   .hero-text h1 {
     font-size: 2rem;
     margin-bottom:6rem;
-    width:400%;
+    width:200%;
   }
   .hero-text p{
     display: none;
@@ -148,7 +148,11 @@
     text-align: left; /* Align text to the left */
     margin-bottom: 200px; /* Adjust margin to move up */
   }
-  .cta-buttons {
-    align-items:center;
+  .btn-analyze {
+    width: 200%; /* Adjust the width as needed */
+    font-size: 1rem;
+  }
+  .hero-content{
+    padding: 1rem;
   }
 }

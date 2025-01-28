@@ -31,7 +31,7 @@ export default function Hero() {
           <p>Upload a selfie or take a new photo to get your personalized beauty score.</p>
           <div className="cta-buttons">
             <button className="btn-analyze" onClick={handleButtonClick}>
-              START
+            Check Your Score
             </button>
             <input
               type="file"
