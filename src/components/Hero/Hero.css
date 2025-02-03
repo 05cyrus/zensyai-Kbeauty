@@ -101,47 +101,36 @@
 .mobile-btn{
   display: none;
 }
+.hero-text h2{
+  display: none;
+}
 @media (max-width:850px) {
   .hero-text p{
     display: none;
   }
   .hero-text h1 {
+    display: none;
+  }
+  .hero-text h2{
     font-size: 2rem;
+    display:block;
   }
 }
 @media (max-width:500px) {
+  .hero-content{
+    margin-top: 60%;
+  }
   .hero-text p{
     display: none;
   }
   .hero-text h1 {
-    font-size: 1.5rem;
+    display: none;
   }
   .btn-analyze{
     font-size: 1rem;
   }
-  
-}
-@media (max-width: 768px) {
-  /* .hero-text h1 {
-    font-size: 2rem;
-    margin-bottom:6rem;
-    width:200%;
+  .hero-text h2{
+    font-size: 1.5rem;
+    display:block;
   }
-  .hero-text p{
-    display: none;
-  }
-  .hero-text {
-    margin-left: 100px;
-    text-align: left; 
-    margin-bottom: 20px; 
-    margin-right: 145px;
-  }
-  .btn-analyze {
-    width: 200%; 
-    font-size: .5rem;
-  }
-  .hero-content{
-    padding: .5rem;
-    width: 100%;
-  } */
 }

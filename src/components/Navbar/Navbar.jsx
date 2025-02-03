@@ -6,11 +6,11 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="navbar-brand">
         {/* <div className="logo" /> */}
-        <span className="brand-text">K-GlowZy</span>
+        <span className="brand-text">GlowZy</span>
       </div>
-      <div className="navbar-menu">
+      {/* <div className="navbar-menu">
         <a href="/">Whats k-beauty?</a>
-      </div>
+      </div> */}
     </nav>
   )
 }

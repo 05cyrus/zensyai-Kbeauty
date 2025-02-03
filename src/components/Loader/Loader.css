@@ -1,0 +1,245 @@
+
+
+/* ===========================================
+   Global Container (was .l-container)
+   Mimics: min-h-screen bg-black flex items-center justify-center p-4
+   =========================================== */
+   .l-container {
+    min-height: 100vh;
+    background-color: #000; /* black */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  /* ===========================================
+     Loader Box (was .l-box)
+     Mimics: relative, max-w-md, bg-gray-900, rounded-xl, shadow-2xl, p-8, border border-gray-800
+     =========================================== */
+  .l-box {
+    position: relative;
+    border: 2px solid;
+    border-image-source: linear-gradient(135deg, #00FFFF, #FF00FF);
+    border-image-slice: 1;
+    box-shadow: 0px 0px 15px rgba(255, 0, 255, 0.5);
+    padding: 2rem;
+    width: 100%;
+    max-width: 28rem; /* approx. max-w-md */
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* --------- Glow effect (converted from Tailwind’s absolute glow div) --------- */
+  .l-box::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    background: linear-gradient(to right, #E10565, #3b82f6); /* from purple-600 to blue-600 */
+    filter: blur(8px);
+    opacity: 0.75;
+    border-radius: inherit;
+    z-index: -1;
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% { opacity: 0.75; }
+    50% { opacity: 1; }
+  }
+  
+  /* ===========================================
+     Progress Bar
+     Mimics: h-3 bg-gray-800 rounded-full overflow-hidden mb-8
+     =========================================== */
+  .l-progress-bar {
+    width: 100%;
+    height: 0.75rem; /* approx. 12px (h-3) */
+    background-color: #1f2937; /* Tailwind gray-800 */
+    border-radius: 9999px;
+    overflow: hidden;
+    margin-bottom: 2rem; /* mb-8 */
+  }
+  
+  .l-progress {
+    height: 100%;
+    background: linear-gradient(to right, #E10565, #3b82f6);
+    border-radius: inherit;
+    transition: width 0.3s ease-out;
+  }
+  
+  /* ===========================================
+     Progress Text
+     Mimics: text-2xl font-bold with gradient text (bg-gradient-to-r from-purple-400 to-blue-400, text-transparent, bg-clip-text)
+     =========================================== */
+  .l-progress-text {
+    font-size: 2rem; /* text-2xl */
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+    background: linear-gradient(to right, #E10565, #60a5fa); /* from purple-400 to blue-400 */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  /* ===========================================
+     Loading Text
+     Mimics: text-center, text-lg, mb-6, transition-opacity duration-500
+     =========================================== */
+  .l-loading-text {
+    font-size: 1.125rem; /* text-lg */
+    color: #d1d5db; /* Tailwind gray-300 */
+    text-align: center;
+    margin-bottom: 1.5rem; /* mb-6 */
+  }
+  
+  /* ===========================================
+     Email Form
+     Mimics: space-y-4, animate-fadeIn and inner input/button styling from OtherProject
+     =========================================== */
+  .l-email-form {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+  
+  .l-email-form input {
+    width: 92%;
+    padding: 0.75rem 1rem;
+    background-color: #374151; /* Tailwind gray-800 */
+    border: 1px solid #4b5563; /* Tailwind gray-700 */
+    color: #f9fafb;
+    border-radius: 0.5rem;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .l-email-form input::placeholder {
+    color: #9ca3af; /* Tailwind gray-400 */
+  }
+  
+  .l-email-form input:focus {
+    border-color: #E10565; /* purple-600 */
+    box-shadow: 0 0 0 2px rgba(126, 34, 206, 0.3);
+  }
+  
+  .l-email-form button {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-top: 1rem;
+    background: linear-gradient(to right, #E10565, #3b82f6);
+    border: none;
+    color: #ffffff;
+    font-size: 1.125rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: background 0.3s;
+  }
+  
+  .l-email-form button:hover {
+    background: linear-gradient(to right, #E10565, #2563eb);
+  }
+  
+  /* ===========================================
+     Success Message
+     Mimics: text-center, space-y-6, animate-fadeIn and inner elements similar to OtherProject
+     =========================================== */
+  .l-success-message {
+    animation: fadeIn 0.5s ease-out forwards;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .l-success-message h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .l-success-message p {
+    color: #9ca3af; /* Tailwind gray-400 */
+    margin-bottom: 1rem;
+  }
+  
+  .l-success-message button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background-color: #1f2937; /* Tailwind gray-800 */
+    color: #d1d5db; /* Tailwind gray-300 */
+    border: 1px solid #374151; /* Tailwind gray-700 */
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .l-success-message button:hover {
+    background-color: #374151; /* Tailwind gray-700 */
+  }
+  
+  /* ===========================================
+     Fade In Animation
+     (Used for form and success elements)
+     =========================================== */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @media (max-width: 480px) {
+    .l-box {
+      padding: 1rem;        /* Reduce padding for better spacing */
+      max-width: 90%;
+      min-height: 40vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: end; /* Keep elements centered */
+    }
+  
+    .l-progress-bar {
+      margin-bottom: 1rem;  /* Adjust spacing for mobile */
+    }
+  
+    .l-progress-text {
+      font-size: 1rem;       /* Keep text visible and aligned */
+      margin-top: 0.5rem;    /* Adjust spacing */
+      text-align: center;
+      margin-top: 0;
+    }
+  
+    .l-loading-text {
+      font-size: 0.9rem;     /* Ensure readability */
+    }
+  
+    .l-email-form input,
+    .l-email-form button {
+      padding: 0.5rem 0.75rem; /* Reduce padding for better fit */
+      font-size: 1rem;
+    }
+  
+    .l-success-message h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* ===========================================
+     (Optional) Loader Active Override
+     You may keep these if you still want to prevent scrolling etc.
+     =========================================== */
+  .loader-active {
+    overflow: hidden;
+  }
+  
